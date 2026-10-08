@@ -624,12 +624,10 @@
     font-size: 0.9rem;
   }
 
-  @media (max-width: 600px) {
   .brand-lockup {
-    width: 350px;  /* Set a fixed width for mobile */
-    height: 105px;  /* Set a fixed height for mobile */
-    margin: 10 auto;
-  }
+  width: min(350px, 90vw);
+  height: auto;
+}
   
   .brand-lockup img, 
   .brand-lockup svg {
