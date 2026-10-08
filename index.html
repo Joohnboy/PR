@@ -624,11 +624,99 @@
     font-size: 0.9rem;
   }
 
-  @media (max-width: 420px) {
-    .countdown { gap: 12px; }
-    .countdown .unit { min-width: 44px; }
-    .countdown .unit .num { font-size: 1.9rem; }
+  /* ─── Mobile responsive fixes ─── */
+@media (max-width: 600px) {
+  /* Logo: scale down on small screens */
+  .brand-lockup {
+    height: 90px;
   }
+
+  /* Page padding */
+  .wrap {
+    padding: 24px 14px 48px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 20px 16px 18px;
+    border-radius: 14px;
+  }
+
+  /* Heading */
+  header.page h1 {
+    font-size: 1.35rem;
+  }
+
+  /* Brand line */
+  .brand-line {
+    width: 180px;
+  }
+
+  /* Ring – shrink slightly */
+  .ring-wrap {
+    width: 140px;
+    height: 140px;
+  }
+
+  .ring-pct {
+    font-size: 1.3rem;
+  }
+
+  /* Countdown numbers */
+  .countdown {
+    gap: 12px;
+  }
+
+  .countdown .unit {
+    min-width: 44px;
+  }
+
+  .countdown .unit .num {
+    font-size: 1.8rem;
+  }
+
+  /* Tags */
+  .hero-tag {
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+
+  /* Tabs */
+  .tab {
+    font-size: 0.78rem;
+    padding: 7px 11px;
+  }
+
+  /* Heatmap cells – slightly smaller on very narrow screens */
+  .heat-cell {
+    width: 5px;
+    height: 13px;
+  }
+
+  /* Section heads */
+  .section-head h2 {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-lockup {
+    height: 72px;
+  }
+
+  header.page h1 {
+    font-size: 1.15rem;
+  }
+
+  .countdown .unit .num {
+    font-size: 1.5rem;
+  }
+
+  .ring-wrap {
+    width: 120px;
+    height: 120px;
+  }
+}
 </style>
 </head>
 <body>
